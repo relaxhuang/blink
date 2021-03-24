@@ -115,3 +115,21 @@ Our UI is very straightforward and optimizes the experience on touch devices for
 for use in the OpenSSL Toolkit. (https://www.openssl.org/).
 - [Libssh2](https://www.libssh2.org)
 - Entypo pictograms by Bruce Daniel www.entypo.com.
+
+
+# Build on my Xcode
+- git with command : 
+```git clone --recursive https://github.com/blinksh/blink.git && cd blink```
+- change branch to "raw" :
+```git checkout raw```
+- get frameworks from shell script :
+```sh get_frameworks.sh```
+- init & update submodules : 
+```git submodules init && git submodules update```
+- remove "Push Notifications", "iCloud", and "Keychain Sharing" Setting from Project face
+- Add Boundle Identifier in Apple Developer Page : 
+https://developer.apple.com/account/
+- Build ipa : 
+Product > Scheme [select Blink] , Product > Destination [select Any iOS Device], Product > Archive
+- Fellow the Step : 
+https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/how-to-create-ipa-file-using-xcode-84e25cbb107f
